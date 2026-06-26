@@ -1,0 +1,112 @@
+.create-album-container{
+
+    display:flex;
+    justify-content:center;
+
+    padding:60px 20px 220px;
+
+}
+
+.create-album-card{
+
+    width:550px;
+
+    background:#181818;
+
+    border-radius:16px;
+
+    padding:35px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+
+}
+
+.create-album-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.create-group{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+.create-group label{
+
+    color:#b3b3b3;
+
+    margin-bottom:8px;
+
+}
+
+.create-group input[type="text"]{
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #333;
+
+    background:#121212;
+
+    color:white;
+
+}
+
+.song-select{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+    background:#222;
+
+    transition:.2s;
+
+}
+
+.song-select:hover{
+
+    background:#2f2f2f;
+
+}
+
+.create-button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#1DB954;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.create-button:hover{
+
+    background:#1ed760;
+
+}

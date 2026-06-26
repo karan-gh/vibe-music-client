@@ -1,0 +1,196 @@
+.register-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#121212;
+
+}
+
+.register-card{
+
+    width:420px;
+
+    background:#181818;
+
+    padding:40px;
+
+    border-radius:16px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+
+}
+
+.register-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.register-group{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.register-group label{
+
+    color:#b3b3b3;
+
+    margin-bottom:8px;
+
+}
+
+.register-group input{
+
+    padding:12px;
+
+    border:1px solid #333;
+
+    border-radius:8px;
+
+    background:#121212;
+
+    color:white;
+
+}
+
+.register-button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#840065;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+.register-button:hover{
+
+    background:#560142;
+
+}
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.register-link a{
+
+    color:#1DB954;
+
+    text-decoration:none;
+
+}
+
+.register-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+.register-group select{
+
+    padding:12px;
+
+    border:1px solid #333;
+
+    border-radius:8px;
+
+    background:#121212;
+
+    color:white;
+
+}
+.role-options{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:10px;
+    height: 20px;
+
+}
+
+.role-card{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px;
+
+    border:2px solid #333;
+
+    border-radius:12px;
+
+    background:#121212;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+.role-card:hover{
+
+    border-color:#035496;
+
+    transform:translateY(-2px);
+
+}
+
+.role-card input{
+
+    display:none;
+
+}
+
+.role-card span{
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.role-card.active{
+
+    background:#003e48;
+
+    border-color:#6e7474;
+
+}
+
+.role-card.active span{
+
+    color:white;
+
+}
