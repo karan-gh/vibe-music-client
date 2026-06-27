@@ -14,11 +14,15 @@
     gap: 2px;
 }
 
-.player-title{
+.player-title {
+    font-size: 18px;
+    font-weight: bold;
 
-    font-size:18px;
-    font-weight:bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
+    max-width: 240px;
 }
 
 .player-artist{
@@ -57,12 +61,10 @@
 
 }
 
-.player-header{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .player-info{
@@ -113,14 +115,14 @@
 
     align-items:center;
 
-    gap:10px;
+    gap:5px;
 
 }
 
 .player-controls button{
 
-    width:46px;
-    height:46px;
+    width:44px;
+    height:44px;
 
     display:flex;
     justify-content:center;
@@ -134,7 +136,7 @@
 
     cursor:pointer;
 
-    font-size:18px;
+    font-size:16px;
 
     transition:.2s;
 
@@ -145,3 +147,5 @@
     transform:scale(1.08);
 
 }
+
+

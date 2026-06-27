@@ -125,9 +125,11 @@ export default function Player() {
 
                 <div className="player-info">
 
-                    <div className="player-title">
-                        {currentSong.title}
-                    </div>
+                        <div className="player-title">
+                            {currentSong.title.length > 10
+                                ? currentSong.title.slice(0, 10) + "..."
+                                : currentSong.title}
+                        </div>
 
                     <div className="player-artist">
                         {currentSong.artist.username}
