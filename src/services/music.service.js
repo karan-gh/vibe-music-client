@@ -29,3 +29,14 @@ export const createAlbum = async (albumData) => {
     const response = await api.post("/music/album", albumData);
     return response.data;
 };
+
+
+export async function getFavorites() {
+    const response = await api.get("/music/favorites");
+    return response.data;
+}
+
+export async function toggleFavorite(musicId) {
+    const response = await api.post(`/music/${musicId}/favorite`);
+    return response.data;
+}

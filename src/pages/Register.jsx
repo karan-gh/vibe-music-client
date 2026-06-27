@@ -7,7 +7,6 @@ import toast from "react-hot-toast";
 export default function Register() {
     const [formData, setFormData] = useState({
         username: "",
-        email: "",
         password: "",
         role: "user",
     });
@@ -22,6 +21,16 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if (formData.username.length < 4 || formData.username.length > 10) {
+            toast.error("Username must be 4-10 characters.");
+            return;
+        }
+
+        if (formData.password.length < 4 || formData.password.length > 10) {
+            toast.error("Password must be 4-10 characters.");
+            return;
+        }
+
         try {
             const data = await register(formData);
             console.log(data);
@@ -33,7 +42,6 @@ export default function Register() {
     };
 
     return (
-
         <div className="register-container">
 
             <form
@@ -46,9 +54,7 @@ export default function Register() {
                 <div className="register-group">
 
                     <label>
-
                         Username
-
                     </label>
 
                     <input
@@ -64,27 +70,7 @@ export default function Register() {
                 <div className="register-group">
 
                     <label>
-
-                        Email
-
-                    </label>
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter email"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
-
-                </div>
-
-                <div className="register-group">
-
-                    <label>
-
                         Password
-
                     </label>
 
                     <input
@@ -100,9 +86,7 @@ export default function Register() {
                 <div className="register-group">
 
                     <label>
-
                         Account Type
-
                     </label>
 
                     <div className="role-options">
@@ -151,9 +135,7 @@ export default function Register() {
                     className="register-button"
                     type="submit"
                 >
-
                     Register
-
                 </button>
 
                 <div className="register-link">
@@ -161,9 +143,7 @@ export default function Register() {
                     Already have an account?{" "}
 
                     <Link to="/login">
-
                         Login
-
                     </Link>
 
                 </div>
@@ -171,7 +151,5 @@ export default function Register() {
             </form>
 
         </div>
-
     );
-
 }

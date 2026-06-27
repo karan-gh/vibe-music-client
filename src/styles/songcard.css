@@ -53,3 +53,18 @@
     gap:18px;
 
 }
+
+
+.favorite-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.favorite-button:hover {
+    color: #1db954;
+    transform: scale(1.1);
+}

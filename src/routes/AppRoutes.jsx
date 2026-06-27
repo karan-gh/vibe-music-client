@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Album from "../pages/Album";
 import UploadMusic from "../pages/UploadMusic";
 import CreateAlbum from "../pages/CreateAlbum";
+import Favorites from "../pages/Favorites";
 
 import MainLayout from "../layouts/MainLayout";
 import ProtectedRoute from "../components/ProtectedRoute";
@@ -30,6 +31,8 @@ export default function AppRoutes() {
                             <Route path="/create-album" element={<CreateAlbum />} />
 
                             <Route path="/album/:albumId" element={<Album />} />
+
+                            <Route path="/favorites" element={<Favorites/>} />
 
                         </Route>
                     </Route>

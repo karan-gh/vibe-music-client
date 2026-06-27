@@ -4,7 +4,8 @@ import {
     FiHome,
     FiUpload,
     FiDisc,
-    FiLogOut
+    FiLogOut,
+    FiHeart
 } from "react-icons/fi";
 import { useAuth } from "../context/AuthContext";
 import "../styles/navbar.css";
@@ -87,10 +88,19 @@ export default function Navbar() {
 
             </Link>
 
+            <Link
+                to="/favorites"
+                className="favorites-button"
+            >
+                <FiHeart />
+                Favorites
+            </Link>
+
+
         <div
             className="menu-container"
             ref={menuRef}
-        >
+            >
 
             <button
                 className="menu-button"

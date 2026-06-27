@@ -143,3 +143,24 @@
     display:block;
     border-radius: 30px;
 }
+
+.favorites-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 16px;
+
+    border: 1px solid #1db954;
+    border-radius: 999px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.favorites-button:hover {
+    background: #1db954;
+    color: black;
+}

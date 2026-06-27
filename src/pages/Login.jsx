@@ -58,7 +58,7 @@ export default function Login() {
 
                     <label>
 
-                        Username / Email
+                        Enter username
 
                     </label>
 
