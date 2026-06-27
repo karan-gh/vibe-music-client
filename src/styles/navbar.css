@@ -147,11 +147,10 @@
 .favorites-button {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
+    padding: 3px 8px;
 
-    padding: 8px 16px;
-
-    border: 1px solid #1db954;
+    border: 1px solid #e8348b;
     border-radius: 999px;
 
     color: white;
@@ -161,6 +160,6 @@
 }
 
 .favorites-button:hover {
-    background: #1db954;
-    color: black;
+    background: #600053;
+    color: rgb(239, 225, 225);
 }

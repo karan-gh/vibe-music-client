@@ -46,12 +46,9 @@ export default function Album() {
 
                     <h1>{album.title}</h1>
 
-                    <p className="album-artist">
-                        {album.artist.username}
-                    </p>
 
                     <p className="album-meta">
-                        {album.musics.length} {album.musics.length === 1 ? "Song" : "Songs"}
+                        {album.musics.length} {album.musics.length === 1 ? "Track" : "Tracks"}
                     </p>
 
                 </div>

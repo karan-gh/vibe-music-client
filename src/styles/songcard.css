@@ -9,7 +9,7 @@
 
     margin-bottom:12px;
 
-    border-radius:8px;
+    border-radius:18px;
 
     transition:0.3s;
 }
@@ -20,6 +20,11 @@
 
     transform:scale(1.01);
 
+}
+
+
+.song-info{
+    margin-left: 5px;
 }
 
 .song-info h3{
@@ -50,7 +55,8 @@
 
     align-items:center;
 
-    gap:18px;
+    gap:8px;
+    margin-left: -8px;
 
 }
 
